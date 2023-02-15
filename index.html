@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="">
 </head>
 
-<body>
-    <section class="w-4/12 mx-auto mt-16 bg-sky-100 rounded-xl">
+<body class="bg-gray-200">
+    <section class="w-4/12 mx-auto mt-16 bg-sky-100 rounded-xl bg-white">
         <!-- Heading -->
-        <div class="text-center p-5">
+        <div class="text-center p-5 mt-5">
             <h1 class=" text-4xl font-semibold">Discount Calculator</h1>
-            <h3 class="text-2xl">made by @<span class="text-rose-500">touhidcodes</span></h3>
+            <h3 class="text-2xl mt-1">made by @<span class="text-rose-500">touhidcodes</span></h3>
         </div>
         <div class="p-6">
             <!-- Total Value -->
@@ -29,12 +29,10 @@
                     <h3 class="pl-5 py-2">Item Quantity: </h3>
                     <h3 class="mx-10 flex">
                         <span id="" class="text-rose-500">0</span>
-                        <div class="flex ml-4">
+                        <div class="flex ml-5">
                             <h4 class="text-sm p-2 hover:bg-sky-300 rounded-xl">Add</h4>
                             <h4 class="text-sm p-2 hover:bg-sky-300 rounded-xl">Remove</h4>
-
                         </div>
-
                     </h3>
                 </div>
                 <div class="flex items-center">
@@ -44,7 +42,26 @@
 
             </div>
             <!-- Discount -->
-
+            <div class="pl-5 mt-12">
+                <div class="flex items-center">
+                    <h3 class="text-2xl font-semibold">Apply Coupon:</h3>
+                    <input type="text" name="" id="" class="rounded-md ml-5 border-2 border-gray-200">
+                </div>
+                <button
+                    class="bg-amber-500 rounded-md px-5 py-2 text-lg font-semibold hover:bg-amber-400 text-white mt-4">Apply</button>
+            </div>
+            <!-- Final Total -->
+            <div>
+                <h3 class="text-sm font-semibold mt-3 pl-5
+                ">You have applied coupon: <span class="text-lg">Coupon</span></h3>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold mt-3 pl-5">No discount available on this coupon !</h3>
+            </div>
+            <div class=" flex items-center text-2xl font-semibold pl-2 mt-6">
+                <h3 class="text-2xl font-semibold">You have to pay: </h3>
+                <h3 class="mx-8">$ <span id="" class="text-rose-500">0</span></h3>
+            </div>
         </div>
     </section>
 </body>
