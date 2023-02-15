@@ -28,10 +28,10 @@
                 <div class="flex items-center">
                     <h3 class="pl-5 py-2">Item Quantity: </h3>
                     <h3 class="mx-10 flex">
-                        <span id="item" class="text-rose-500">1</span>
+                        <span id="item" class="text-rose-500">0</span>
                         <div class="flex ml-2">
-                            <h4 id="add" class="text-sm p-2 hover:bg-sky-300 rounded-xl">Add</h4>
-                            <h4 id="remove" class="text-sm p-2 hover:bg-sky-300 rounded-xl">Remove</h4>
+                            <h4 id="add" class="text-sm p-2 hover:bg-slate-300 rounded-xl">Add</h4>
+                            <h4 id="remove" class="text-sm p-2 hover:bg-slate-300 rounded-xl">Remove</h4>
                         </div>
                     </h3>
                 </div>
@@ -45,22 +45,34 @@
             <div class="pl-5 mt-12">
                 <div class="flex items-center">
                     <h3 class="text-2xl font-semibold">Apply Coupon:</h3>
-                    <input type="text" name="" id="" class="rounded-md ml-5 border-2 border-gray-200">
+                    <input type="text" name="" id="coupon" class="rounded-md ml-5 border-2 border-gray-200">
                 </div>
-                <button
+                <button id="btn-coupon"
                     class="bg-amber-500 rounded-md px-5 py-2 text-lg font-semibold hover:bg-amber-400 text-white mt-4">Apply</button>
             </div>
             <!-- Final Total -->
-            <div>
+            <div id="coupon-true" class="hidden">
                 <h3 class="text-sm font-semibold mt-3 pl-5
-                ">You have applied coupon: <span class="text-lg">Coupon</span></h3>
+                ">You have applied <span id="show-coupon" class="text-xl text-rose-500">Coupon</span> for 30% discount
+                    on this item
+                </h3>
             </div>
-            <div>
+            <div id="coupon-false" class="hidden">
                 <h3 class="text-sm font-semibold mt-3 pl-5">No discount available on this coupon !</h3>
             </div>
+            <div id="coupon-item">
+                <h3 class="text-sm font-semibold mt-3 pl-5">
+                    To get 30% discount on this item apply <span class="text-xl text-rose-500">touhidcodes</span> or
+                    <span class="text-xl text-rose-500">DISC30</span> coupon
+                </h3>
+            </div>
             <div class=" flex items-center text-2xl font-semibold pl-2 mt-10">
+                <h3 class="text-2xl font-semibold">Your discount: </h3>
+                <h3 class="mx-8">$ <span id="discount" class="text-rose-500">0</span></h3>
+            </div>
+            <div class=" flex items-center text-2xl font-semibold pl-2 mt-3">
                 <h3 class="text-2xl font-semibold">You have to pay: </h3>
-                <h3 class="mx-8">$ <span id="" class="text-rose-500">0</span></h3>
+                <h3 class="mx-2">$ <span id="grand-total" class="text-rose-500">0</span></h3>
             </div>
         </div>
     </section>

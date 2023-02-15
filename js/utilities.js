@@ -4,6 +4,7 @@ function getId(id) {
 	return element;
 }
 
+// Get element text value
 function getTextById(Id) {
 	const textId = document.getElementById(Id);
 	const textString = textId.innerText;
@@ -11,17 +12,7 @@ function getTextById(Id) {
 	return textValue;
 }
 
-// function add(addId) {
-// 	const addId = document.getElementById(addId);
-// 	const add = addId.innerText + 1;
-// 	return add;
-// }
-
-// function set(id, value) {
-// 	const setId = document.getElementById(id);
-// 	const set = setId.innerText + value;
-// }
-
+// Set Price Value
 function setPrice(value) {
 	const itemPrice = getTextById("item-value");
 	const newItemPrice = itemPrice * value;
@@ -30,6 +21,7 @@ function setPrice(value) {
 	totalValueId.innerText = newItemPrice;
 }
 
+// Validation Items
 function validation(value) {
 	const itemPrice = getTextById("item-value");
 	const newItemPrice = itemPrice * value;
