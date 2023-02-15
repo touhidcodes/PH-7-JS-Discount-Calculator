@@ -21,3 +21,25 @@ function getTextById(Id) {
 // 	const setId = document.getElementById(id);
 // 	const set = setId.innerText + value;
 // }
+
+function setPrice(value) {
+	const itemPrice = getTextById("item-value");
+	const newItemPrice = itemPrice * value;
+
+	const totalValueId = getId("total-Value");
+	totalValueId.innerText = newItemPrice;
+}
+
+function validation(value) {
+	const itemPrice = getTextById("item-value");
+	const newItemPrice = itemPrice * value;
+
+	const totalValueId = getId("total-Value");
+	const itemId = getId("item");
+
+	if (newItemPrice < 0) {
+		alert("Please select minimum one item");
+		itemId.innerText = 0;
+		totalValueId.innerText = 0;
+	}
+}
